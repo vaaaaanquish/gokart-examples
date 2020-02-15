@@ -1,6 +1,9 @@
 # gokart-examples
 gokart examples for m3 techbook 2
 
+for `技術書典8`.
+url: https://techbookfest.org/event/tbf08/circle/5759156128579584
+
 
 # 1, Make project by cookiecutter-gokart
 
@@ -220,7 +223,7 @@ resource/
 
 # 3, Check data by thunderbolt
 
-Please see './ExampleThunderbolt.ipynb'
+Please see `./ExampleThunderbolt.ipynb`
 
 ```
 from thunderbolt import Thunderbolt
