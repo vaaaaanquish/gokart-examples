@@ -4,6 +4,8 @@ gokart examples for m3 techbook 2
 
 # 1, Make project by cookiecutter-gokart
 
+We can use project templete by [cookiecutter](https://github.com/cookiecutter/cookiecutter).
+
 ```
 $ cookiecutter https://github.com/m3dev/cookiecutter-gokart
 project_name [project_name]: GokartSample
@@ -36,7 +38,9 @@ $ tree .
 └── README.md
 ```
 
-unittest
+
+Unittest has already been added :)
+
 
 ```
 $ cd GokartSample/
@@ -47,7 +51,8 @@ Ran 1 test in 0.001s
 
 OK
 ```
-start DDD.
+start test-driven development!
+
 
 
 # 2, Development gokart task
@@ -57,7 +62,8 @@ example: GokartSample/sample/model/sample.py
  - TaskB: update dict
  - TaskC: TasA -> TaskB and update dict
 
-DDD.
+
+TDD. It is a correspondence table between task and test.
 
 <table>
 <tr>
@@ -149,16 +155,18 @@ class TaskA(gokart.TaskOnKart):
 </pre></td></tr>
 </table>
 
+ 
+
 # 3 running gokart
 
-
+Let's running gokart task.
 ```
 # add new parameter info GokartSample/conf/param.ini
 [sample.TaskA]
 sample='sample param'
 ```
 
-run
+run.
 ```
 $ python main.py sample.TaskC --local-scheduler
 
@@ -174,8 +182,9 @@ This progress looks :) because there were no failed tasks or missing dependencie
 
 ===== Luigi Execution Summary =====
 ```
-
-output files
+↓
+check output files
+↓
 ```
 $ tree resource
 
@@ -206,6 +215,8 @@ resource/
 
 8 directories, 15 files
 ```
+
+
 
 # 3, Check data by thunderbolt
 
